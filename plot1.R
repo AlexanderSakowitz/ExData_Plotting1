@@ -2,7 +2,7 @@
 data<-read.csv("household_power_consumption.txt", sep=';',colClasses = "character")
 
 
-# Find the data corresponding to the two days
+# Find the data corresponding to the first two days Feb 2007
 x<-data$Date=="1/2/2007" | data$Date=="2/2/2007"
 
 Useddata=data[x,]
